@@ -750,6 +750,30 @@
     consola "^2.15.0"
     node-fetch "^2.6.1"
 
+"@puregram/hear@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@puregram/hear/-/hear-2.0.2.tgz#d90a5233d665e5567144d29e9527c1f17c6eb652"
+  integrity sha512-eCR1FX3TdqXgYQR/a/sv1UKBD3BDhKGHG3lfWXmeFMCdWHmbeiuYQSdGeVtgn+mbW3vt1Rrlgb0Q3icUg8j5EQ==
+  dependencies:
+    middleware-io "^2.8.0"
+
+"@puregram/scenes@^2.0.1-rc.1":
+  version "2.0.1-rc.1"
+  resolved "https://registry.yarnpkg.com/@puregram/scenes/-/scenes-2.0.1-rc.1.tgz#f0964610af761e0c4d60ddaddc9b30ae89597b0d"
+  integrity sha512-+7bTA2aqmJFJM32rn2MJqgWSJ6Qx71E8obWgvjDb5tN9PMa7SdsSk83kApMPXMflGqO2JKa1bs2GBkuiNg9Ivw==
+  dependencies:
+    "@puregram/session" "^2.0.0"
+
+"@puregram/session@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@puregram/session/-/session-2.0.0.tgz#e442bcc8930aba3a924497002c70bff34cebc581"
+  integrity sha512-vfFzPiflg0rWr2noEgjosSo6SvcunsSgVXHpLGxODYXiTUC9cDIczIo2RV2BqXQPu7IpPwL4O0OUafFmNMPsHw==
+
+"@puregram/session@^2.0.1-rc.1":
+  version "2.0.1-rc.1"
+  resolved "https://registry.yarnpkg.com/@puregram/session/-/session-2.0.1-rc.1.tgz#5f8f634e02dfa91b75d6525eb8335c35a0e35bda"
+  integrity sha512-tmJ2Lb6O6I0A+XGRas5M6c5qkylfvqlWl+k1gN0xnyzzIvdfMFSUQmwpvolrnHJIngKsQfje3Ait6YSImEXKLw==
+
 "@sinclair/typebox@^0.23.3":
   version "0.23.5"
   resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.23.5.tgz#93f7b9f4e3285a7a9ade7557d9a8d36809cbc47d"
@@ -3106,7 +3130,7 @@ inquirer@8.2.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
-inspectable@^1.2.1:
+inspectable@^1.2.0, inspectable@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/inspectable/-/inspectable-1.2.1.tgz#301cdeb719231c5be5af22fbbee828f7b57e1670"
   integrity sha512-OKfL06Szd6TW5asTRtsmiAZXeli85jHQHmgN5YepTlxOh3gj/1PZA0WR0BKFUOwDOo7sl0DMrJThmNi7u8PrWw==
@@ -4063,6 +4087,18 @@ neo-async@^2.6.0, neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+nestjs-puregram@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/nestjs-puregram/-/nestjs-puregram-2.7.0.tgz#a1c50a94b29c35376c0fd95b65821779836eae41"
+  integrity sha512-Nvch792QDoB472p9j1YSmOYqaRqG3nataYqcaZTd6o/qGOzpqfo4MceHvcgmer0CbT1Uk6Yx1OqJDJnvpWJd8A==
+  dependencies:
+    "@puregram/hear" "^2.0.2"
+    "@puregram/scenes" "^2.0.1-rc.1"
+    "@puregram/session" "^2.0.1-rc.1"
+    lodash "^4.17.21"
+    middleware-io "^2.8.0"
+    puregram "^2.7.0"
+
 nestjs-vk@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/nestjs-vk/-/nestjs-vk-4.4.2.tgz#307e4968f84fa52cb3a09da51d2670d9ad83d682"
@@ -4464,6 +4500,18 @@ punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+
+puregram@^2.7.0:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/puregram/-/puregram-2.7.4.tgz#deece988922d17d1844bec76317c506932f5a286"
+  integrity sha512-tp8+OlTTTozHMhqTtWl8bUNEcBgxD5knLBAYcvDeRG3L4ZgfvfA52dykHQld70VBNc6zHm09kVJct4mSYNoMhA==
+  dependencies:
+    debug "^4.3.2"
+    form-data-encoder "^1.7.2"
+    formdata-node "^4.3.2"
+    inspectable "^1.2.0"
+    middleware-io "^2.8.0"
+    undici "^5.0.0"
 
 q@^1.5.1:
   version "1.5.1"
@@ -5371,6 +5419,11 @@ uglify-js@^3.1.4:
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.16.0.tgz#b778ba0831ca102c1d8ecbdec2d2bdfcc7353190"
   integrity sha512-FEikl6bR30n0T3amyBh3LoiBdqHRy/f4H80+My34HOesOKyHfOsxAPAxOoqC0JUnC1amnO0IwkYC3sko51caSw==
+
+undici@^5.0.0:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.5.1.tgz#baaf25844a99eaa0b22e1ef8d205bffe587c8f43"
+  integrity sha512-MEvryPLf18HvlCbLSzCW0U00IMftKGI5udnjrQbC5D4P0Hodwffhv+iGfWuJwg16Y/TK11ZFK8i+BPVW2z/eAw==
 
 universalify@^2.0.0:
   version "2.0.0"

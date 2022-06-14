@@ -1,8 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { CoreService } from "@app/core";
 
 @Injectable()
 export class TelegramSvcService {
-  getHello(): string {
-    return 'Hello World!';
+  constructor(private readonly coreService: CoreService) {}
+
+  onInfoCommand(ctx) {
+    return this.coreService.info(ctx);
   }
 }

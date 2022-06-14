@@ -1,12 +1,15 @@
-import { Controller, Get } from '@nestjs/common';
+import { Update, Ctx, Hears } from 'nestjs-vk';
+import { MessageContext } from 'vk-io';
 import { VkSvcService } from './vk-svc.service';
 
-@Controller()
+@Update()
 export class VkSvcController {
   constructor(private readonly vkSvcService: VkSvcService) {}
 
-  @Get()
-  getHello(): string {
-    return this.vkSvcService.getHello();
+  @Hears(/^\/?(info|инфо)$/i)
+  async onInfoCommand(@Ctx() ctx: MessageContext) {
+    const data = this.vkSvcService.onInfoCommand(ctx);
+
+    await ctx.reply(data);
   }
 }

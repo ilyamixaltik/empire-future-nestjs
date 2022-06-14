@@ -38,6 +38,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/telegram-svc/tsconfig.app.json"
       }
+    },
+    "discord-svc": {
+      "type": "application",
+      "root": "apps/discord-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/discord-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/discord-svc/tsconfig.app.json"
+      }
     }
   },
   "compilerOptions": {

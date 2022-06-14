@@ -51,12 +51,14 @@ $ npm run start:prod
 # unit tests
 $ npm run test
 
-# e2e tests
-$ npm run test:e2e
-
 # test coverage
 $ npm run test:cov
 ```
+
+## Docker
+
+Before launching Docker compose, you need to create folders to store data from containers. Also apply a command to each folder to change the rights.
+Team ```chmod -R 777 <path to folter>```
 
 ## Support
 
@@ -64,7 +66,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Author - [Ilya Mixaltik](https://github.com/ilyamixaltik)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 

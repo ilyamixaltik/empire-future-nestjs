@@ -10,6 +10,6 @@ export class VkSvcController {
   async onInfoCommand(@Ctx() ctx: MessageContext) {
     const data = this.vkSvcService.onInfoCommand(ctx);
 
-    return ctx.reply(data);
+    await ctx.reply(data);
   }
 }

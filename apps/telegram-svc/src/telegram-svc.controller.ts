@@ -1,12 +1,13 @@
-import { Controller, Get } from '@nestjs/common';
+import { Hears, Update } from 'nestjs-puregram';
+import { MessageContext } from 'puregram';
 import { TelegramSvcService } from './telegram-svc.service';
 
-@Controller()
+@Update()
 export class TelegramSvcController {
   constructor(private readonly telegramSvcService: TelegramSvcService) {}
 
-  @Get()
-  getHello(): string {
-    return this.telegramSvcService.getHello();
+  @Hears(/^\/?(info|инфо)$/i)
+  onInfoCommand(ctx: MessageContext): string {
+    return this.telegramSvcService.onInfoCommand(ctx);
   }
 }

@@ -19,6 +19,9 @@ import { VkSvcService } from './vk-svc.service';
     })
   ],
   controllers: [],
-  providers: [VkSvcService, VkSvcController, CoreService],
+  providers: [
+    CoreService,
+    VkSvcService, VkSvcController
+  ],
 })
 export class VkSvcModule {}

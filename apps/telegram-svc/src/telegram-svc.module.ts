@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { CoreService } from '@app/core';
 import { TelegramModule } from 'nestjs-puregram';
 import { TelegramSvcController } from './telegram-svc.controller';
 import { TelegramSvcService } from './telegram-svc.service';
@@ -10,10 +11,13 @@ import { TelegramSvcService } from './telegram-svc.service';
       envFilePath: 'process.env',
     }),
     TelegramModule.forRoot({
-      token: process.env.
+      token: process.env.TELEGRAM_BOT_TOKEN
     })
   ],
   controllers: [],
-  providers: [TelegramSvcService, TelegramSvcController],
+  providers: [
+    CoreService,
+    TelegramSvcService, TelegramSvcController
+  ],
 })
 export class TelegramSvcModule {}

@@ -1,5 +1,58 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "apps/empire-future-nestjs/src",
+  "projects": {
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "empire-future-nestjs": {
+      "type": "application",
+      "root": "apps/empire-future-nestjs",
+      "entryFile": "main",
+      "sourceRoot": "apps/empire-future-nestjs/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/empire-future-nestjs/tsconfig.app.json"
+      }
+    },
+    "vk-svc": {
+      "type": "application",
+      "root": "apps/vk-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/vk-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/vk-svc/tsconfig.app.json"
+      }
+    },
+    "telegram-svc": {
+      "type": "application",
+      "root": "apps/telegram-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/telegram-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/telegram-svc/tsconfig.app.json"
+      }
+    },
+    "discord-svc": {
+      "type": "application",
+      "root": "apps/discord-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/discord-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/discord-svc/tsconfig.app.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/empire-future-nestjs/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/empire-future-nestjs"
 }

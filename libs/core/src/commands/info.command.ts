@@ -1,4 +1,4 @@
-export const InfoCommand = () => {
+export const InfoCommand = (): string => {
   let info: string = `Инфо о проекте:\n`;
   info += `Version: 1.0.0\n`
   info += `NodeJS: v18.3.0\n`

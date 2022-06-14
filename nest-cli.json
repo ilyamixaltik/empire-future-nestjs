@@ -29,6 +29,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/vk-svc/tsconfig.app.json"
       }
+    },
+    "telegram-svc": {
+      "type": "application",
+      "root": "apps/telegram-svc",
+      "entryFile": "main",
+      "sourceRoot": "apps/telegram-svc/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/telegram-svc/tsconfig.app.json"
+      }
     }
   },
   "compilerOptions": {

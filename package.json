@@ -27,6 +27,7 @@
     "@nestjs/platform-express": "^8.0.0",
     "nestjs-puregram": "^2.7.0",
     "nestjs-vk": "^4.4.2",
+    "puregram": "^2.7.4",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",

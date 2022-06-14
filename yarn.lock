@@ -4501,7 +4501,7 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puregram@^2.7.0:
+puregram@^2.7.0, puregram@^2.7.4:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/puregram/-/puregram-2.7.4.tgz#deece988922d17d1844bec76317c506932f5a286"
   integrity sha512-tp8+OlTTTozHMhqTtWl8bUNEcBgxD5knLBAYcvDeRG3L4ZgfvfA52dykHQld70VBNc6zHm09kVJct4mSYNoMhA==
